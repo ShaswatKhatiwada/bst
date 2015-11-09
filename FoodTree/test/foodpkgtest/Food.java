@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package BinarySearchTree;
+package foodpkgtest;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -16,9 +16,9 @@ import static org.junit.Assert.*;
  *
  * @author Shaswat
  */
-public class Driver {
+public class Food {
     
-    public Driver() {
+    public Food() {
     }
     
     @BeforeClass
