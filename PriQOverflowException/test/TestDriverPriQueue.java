@@ -1,44 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
-import static org.junit.Assert.*;
-
-/**
- *
- * @author Shaswat
- */
 public class TestDriverPriQueue {
-    
-    public TestDriverPriQueue() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
-    }
 
-    // TODO add test methods here.
-    // The methods must be annotated with annotation @Test. For example:
-    //
-    // @Test
-    // public void hello() {}
+	public static void main(String[] args) {
+		PriQueueInterface<Integer> pq = new PriQueueImpl<Integer>();
+		pq.enqueue(23);
+		pq.enqueue(12);
+		pq.enqueue(13);
+		pq.enqueue(1);
+		pq.enqueue(34);
+		pq.enqueue(45);
+		pq.enqueue(22);
+		pq.enqueue(56);
+		pq.enqueue(17);
+		pq.enqueue(44);
+		pq.enqueue(29);
+
+		while (!pq.isEmpty()) {
+			int max = pq.dequeue();
+			System.out.println(max + " " + pq);
+		}
+	}
+
 }
